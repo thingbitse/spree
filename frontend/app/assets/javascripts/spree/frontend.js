@@ -57,3 +57,8 @@ Spree.showProgressBar = function () {
   Turbolinks.controller.adapter.progressBar.setValue(0)
   Turbolinks.controller.adapter.progressBar.show()
 }
+
+Spree.hideProgressBar = function () {
+  if (!Turbolinks.supported) { return }
+  Turbolinks.controller.adapter.progressBar.hide()
+}
