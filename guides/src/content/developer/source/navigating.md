@@ -1,6 +1,7 @@
 ---
 title: Navigating the Source
 section: source-code
+hidden: true
 ---
 
 ## Overview

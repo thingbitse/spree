@@ -1,6 +1,7 @@
 ---
 title: "Source Code"
 section: source-code
+hidden: true
 ---
 
 Spree's functionality is split across seven different components:

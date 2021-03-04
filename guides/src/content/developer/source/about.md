@@ -1,6 +1,7 @@
 ---
 title: About the Code
 section: source-code
+hidden: true
 ---
 
 ## What is Spree?

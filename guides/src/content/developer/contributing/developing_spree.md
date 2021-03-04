@@ -1,59 +1,65 @@
 ---
 title: Developing Spree
-section: tutorial
-order: 2
+section: contributing
+order: 0
 ---
 
 ## Overview
 
-Spree is meant to be run within the context of Rails application and the source code is essentially a collection of gems. You can easily create a sandbox application inside of your cloned source directory for testing purposes.
+This guide covers all the necessary steps to contributing to Spree source code. We're happy you're here!
+
+## Fork Spree repo
+
+Go to [Spree GitHub repository](https://github.com/spree/spree) and click **Fork** button. This will create a copy of Spree repository on your GitHub account. See [Github Documentation](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) for more information on forking.
 
 ## Setup locally
 
-Clone the Git repo
+1. Clone the your fork repository
 
-```shell
-git clone git://github.com/spree/spree.git
-cd spree
-```
+    ```shell
+    git clone git://github.com/your_github_username/spree.git
+    cd spree
+    ```
 
-Install the gem dependencies
+2. Install the gem dependencies
 
-```shell
-bundle install
-```
+    ```shell
+    bundle install
+    ```
 
 ### Fix Bundle errors on MacOS
 
 If `bundle install` fails that means you're missing some required system libraries.
 
-Firstly, please [install homebew](https://brew.sh/). With homebrew installed you will need to install some packages needed to run Spree and Rails applications in general:
+Firstly, ensure you hve [homebrew installed](https://brew.sh/). You will need to install some packages needed to run Spree and Rails applications in general:
 
-```bash
+```shell
 brew install openssl mysql postgresql sqlite imagemagick
 ```
 
-## Sandbox
+## Create Sandbox application
 
-Create a sandbox Rails application for testing purposes which automatically performs all necessary database setup
+Spree is meant to be run within the context of Rails application and the source code is essentially a collection of gems. You can easily create a sandbox application inside of your cloned source directory for testing purposes.
+
+This will setup a Rails application with Spree and some essential extensions and gems pre-installed with some data seeded Sandbox application is not meant to be run on production!
 
 ```shell
 bundle exec rake sandbox
 ```
 
-For headless sandbox please run:
+For **headless sandbox** please run:
 
 ```shell
 SPREE_HEADLESS=true bundle exec rake sandbox
 ```
 
-By default Sandbox uses SQLite database. But you can switch to PostgreSQL:
+By default Sandbox uses **SQLite** database. But you can switch to **PostgreSQL**:
 
 ```shell
 DB=postgres bundle exec rake sandbox
 ```
 
-or MySQL:
+or **MySQL**:
 
 ```shell
 DB=mysql bundle exec rake sandbox
@@ -80,6 +86,8 @@ You may notice that your Spree store runs slower in development environment. Thi
 config.assets.debug = false
 ```
 
+### Caching
+
 Also in development caching is disabled by default. To turn on caching run:
 
 ```bash
@@ -87,6 +95,15 @@ bundle exec rails dev:cache
 ```
 
 You will need to restart rails server after this change.
+
+## Making changes
+
+Create a new branch for your changes. Do not push changes to the main branch. Branch name should be human readable and informative, eg.
+
+* bug fixes: `fix/order-recalculation-total-bug`
+* features: `feature/my-new-amazing-feature`
+
+
 
 ## Running Tests
 
@@ -132,3 +149,16 @@ We use chromedriver to run integration tests. To install it please use this comm
 ```bash
 brew cask install chromedriver
 ```
+
+## Submitting Changes
+
+1. Push your changes to a topic branch in your fork of the repository.
+
+  ```shell
+  git push -u origin fix/order-recalculation-total-bug
+  ```
+
+2. Create a Pull request - [please follow this guide](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
+
+If your changes references 
+

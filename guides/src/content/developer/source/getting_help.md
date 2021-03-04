@@ -1,6 +1,7 @@
 ---
 title: Getting Help
 section: source-code
+hidden: true
 ---
 
 ## Overview
