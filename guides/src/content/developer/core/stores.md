@@ -13,6 +13,7 @@ Each Store operates on a different domain or subdomain, eg.
 * Store B, `eu.example.com`
 * Store C, `another-brand.com`
 
+![Spree Multi-Currency and Multi-Language](../../../images/features/international_978@2x.png)
 ## `current_store` method
 
 All Spree controllers or any other controllers that includes [Spree::Core::ControllerHelpers::Store](https://github.com/spree/spree/blob/master/core/lib/spree/core/controller_helpers/store.rb) have access to the `current_store` method which returns the currently in use `Spree::Store` object. 
@@ -33,6 +34,8 @@ To get the default store in code you can call `Spree::Store.default`.
 <alert kind="note">
   This section only applies to Spree 4.2 or newer. If you're using an older version, [please upgrade](/developer/upgrades)
 </alert>
+
+![](../../../images/features/international_dropdown.gif)
 
 Each Store can have different multiple locales and currencies. This configuration is stored in Store model attributes:
 
