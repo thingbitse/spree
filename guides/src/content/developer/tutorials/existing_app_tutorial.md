@@ -21,7 +21,7 @@ in your project root directory.
     **Rails 6.0 and 6.1**
 
     ```ruby
-    gem 'spree', '~> 4.2.0'
+    gem 'spree', '~> 4.2'
     gem 'spree_auth_devise', '~> 4.3'
     gem 'spree_gateway', '~> 3.9'
     gem 'spree_i18n', '~> 5.0'
