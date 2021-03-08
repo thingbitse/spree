@@ -1,6 +1,6 @@
 ---
 title: "Stores"
-section: core
+section: internals
 order: 0
 ---
 

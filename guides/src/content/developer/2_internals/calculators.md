@@ -1,6 +1,6 @@
 ---
 title: 'Calculators'
-section: core
+section: internals
 order: 7
 ---
 

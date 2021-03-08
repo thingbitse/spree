@@ -1,6 +1,6 @@
 ---
 title: "Preferences"
-section: core
+section: internals
 ---
 
 ## Overview

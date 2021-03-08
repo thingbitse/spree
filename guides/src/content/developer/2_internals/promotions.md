@@ -1,6 +1,6 @@
 ---
 title: "Promotions"
-section: core
+section: internals
 order: 5
 ---
 
