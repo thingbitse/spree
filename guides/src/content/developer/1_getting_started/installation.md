@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Spree
+title: Installation
 section: tutorial
 order: 0
 ---
@@ -39,13 +39,3 @@ Upon successful authentication, you should see the admin screen:
 ![Admin Screen](../../../images/developer/overview.png)
 
 Feel free to explore some of the Admin Panel features that Spree has to offer and to verify that your installation is working properly.
-
-## Next steps
-
-If you've followed the steps described in this tutorial, you should now have a fully functional Spree application up and running.
-
-For starting/stopping/restarting application please refer to [Spree Starter README](https://github.com/spree/spree_starter#running-the-project).
-
-We recommend you should also continue to [Customization section](/developer/customization/storefront.html) to learn how to modify and extend your Spree application.
-
-To learn more about Spree internals please refer [Core section](/developer/core/orders.html).

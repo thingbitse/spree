@@ -23,6 +23,14 @@ ID = "49ded9cc-27d3-4e02-b186-4fd7fd334ed8"
   from = "/release_notes/spree_*"
   to = "/release_notes/:splat"
 
+# core -> internals redirects
+[[redirects]]
+  from = "/developer/core/"
+  to = "/developer/internals/"
+[[redirects]]
+  from = "/developer/core/*"
+  to = "/developer/internals/:splat"
+
 # User - Users section redirects
 [[redirects]]
   from = "/user/creating_users.html"
@@ -60,7 +68,11 @@ ID = "49ded9cc-27d3-4e02-b186-4fd7fd334ed8"
 # tutorials redirects
 [[redirects]]
   from = "/developer/getting_started_tutorial.html"
-  to = "/developer/tutorials/getting_started_tutorial.html"
+  to = "/developer/getting_started/installation.html"
+
+[[redirects]]
+  from = "/developer/tutorials/getting_started_tutorial.html"
+  to = "/developer/getting_started/installation.html"
 
 [[redirects]]
   from = "/developer/api_customization_tutorial.html"
