@@ -1,6 +1,6 @@
 ---
 title: "Adjustments"
-section: core
+section: internals
 order: 6
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Payments"
-section: core
+section: internals
 order: 3
 ---
 

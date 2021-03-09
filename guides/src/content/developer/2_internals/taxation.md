@@ -1,6 +1,6 @@
 ---
 title: Taxation
-section: core
+section: internals
 order: 6
 ---
 

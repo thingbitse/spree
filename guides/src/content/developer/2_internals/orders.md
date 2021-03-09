@@ -1,6 +1,6 @@
 ---
 title: "Orders"
-section: core
+section: internals
 order: 1
 ---
 

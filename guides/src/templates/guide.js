@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import RehypeReact from 'rehype-react'
 import { css } from '@emotion/core'
+import Link from "gatsby-link"
 
 // --- Components
 import Layout from '../components/Layout'
@@ -54,16 +55,19 @@ function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1)
 }
 
-export default function Template({ data }) {
+export default function Template({ data, pageContext }) {
   const { guide } = data
+
+  const { next, prev } = pageContext
+  console.log(next)
 
   let pageTitle = guide.frontmatter.title
 
-  if (guide.fields.section) {
-    pageTitle += ` | ${capitalize(guide.fields.section.replace(/_/, ' '))}`
+  if (guide.fields.section && guide.fields.section != guide.fields.rootSection) {
+    pageTitle += ` | ${capitalize(guide.fields.section.replace('_', ' ').replace(/^\d+/, ''))}`
   }
-  if (guide.fields.rootSection) {
-    pageTitle += ` | ${capitalize(guide.fields.rootSection.replace(/_/, ' '))}`
+  if (guide.fields.rootSection && guide.fields.rootSection != pageTitle) {
+    pageTitle += ` | ${capitalize(guide.fields.rootSection.replace('_', ' '))}`
   }
 
   let pageDescription = guide.frontmatter.description
@@ -99,6 +103,9 @@ export default function Template({ data }) {
           group={data.sidebarNav.group}
           isIndex={guide.fields.isIndex}
         />
+        <div>
+
+        </div>
       </article>
     </Layout>
   )

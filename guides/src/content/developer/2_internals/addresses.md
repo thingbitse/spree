@@ -1,6 +1,6 @@
 ---
 title: "Addresses"
-section: core
+section: internals
 ---
 
 ## Address
