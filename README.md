@@ -1,4 +1,4 @@
-<a href="https://guides.spreecommerce.org/release_notes/4_1_0.html"><img src="https://spreecommerce.org/wp-content/uploads/2020/03/spree-4_1-mobile-first-customizable-ux-1400x800-0_20.png" /></a>
+![Spree Commerce](guides/src/images/features/spree_header@2x.png)
 
 # Spree Commerce
 
@@ -11,6 +11,8 @@
 **Spree** is a complete open source e-commerce solution built with Ruby on Rails. It was started by Sean Schofield and is now developed by [Spark Solutions](http://sparksolutions.co). We're open to [contributions](#contributing).
 
 ## Key Features
+
+![admin panel](guides/src/images/features/admin_panel_978@2x.jpg)
 
 * **[Headless Commerce](https://spreecommerce.org/use-cases/headless-ecommerce-api/)** - build mobile apps or custom storefronts in any technology
 * **[PWA](https://spreecommerce.org/use-cases/spree-pwa-progressive-web-application/)** - offline shopping experiences like native mobile apps
@@ -26,7 +28,7 @@
 * **Fully customizable** - pick and choose parts you want to use and customize everything else (storefront, order processing, API, etc) to create unique solutions that your business requires
 * **More features available via extensions** - dozens of extensions built by community, ready for use for free!
 
-![multi store](guides/src/images/features/multi_store_978@2x.png)
+![multi store](guides/src/images/features/international_978@2x.png)
 
 ## Demo
 
