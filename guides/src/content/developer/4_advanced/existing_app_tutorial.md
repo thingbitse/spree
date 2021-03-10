@@ -1,6 +1,6 @@
 ---
 title: Add Spree to an existing Ruby on Rails application
-section: tutorial
+section: advanced
 order: 1
 ---
 

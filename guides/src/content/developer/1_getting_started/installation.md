@@ -1,14 +1,18 @@
 ---
 title: Installation
-section: tutorial
+section: getting_started
 order: 0
 ---
 
 ## Prerequisites
 
-Before starting this tutorial, make sure you have [Docker](https://docs.docker.com/get-docker/) installed on your system. This is fairly straightforward, but differs depending on which operating system you use.
+Before proceeding make sure you have [Docker Desktop](https://docs.docker.com/get-docker/) installed on your system. This is fairly straightforward, but differs depending on which operating system you use.
 
 If you would like to add Spree to your existing Ruby on Rails application, please [follow this guide instead](/developer/tutorials/existing_app_tutorial.html).
+
+### Windows
+
+Windows users will need to [install Linux subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to proceed.
 
 ## Installation
 
@@ -16,6 +20,7 @@ If you would like to add Spree to your existing Ruby on Rails application, pleas
 2. Unzip it
 3. Rename `spree_starter-main` directory as you please
 4. Run `bin/setup` in said directory
+5. Wait for the commands to execute (it can take around 2-3 minutes)
 
 ## Hello, Spree Commerce
 

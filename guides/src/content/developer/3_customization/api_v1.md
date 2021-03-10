@@ -185,5 +185,5 @@ api_key = user.spree_api_key # Copy the api_key value
 Now, when we head to `http://localhost:3000/api/v1/sales`, passing the header `X-Spree-Token: [YOUR_COPIED_API_KEY]`, (or add a `?token=[YOUR_COPIED_API_KEY]`  to the url) into your browser or any REST client, we should see the json result with all products with a sale price.
 
 <alert kind="note">
-  Note that you will likely need to restart our example Spree application (created in the [Getting Started](/developer/tutorials/getting_started_tutorial.html) tutorial).
+  Note that you will likely need to restart our example Spree application (created in the [Getting Started](/developer/getting_started/installation.html) tutorial).
 </alert>

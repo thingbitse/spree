@@ -8,7 +8,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/spree.svg)](https://badge.fury.io/rb/spree) [![Circle CI](https://circleci.com/gh/spree/spree.svg?style=shield)](https://circleci.com/gh/spree/spree/tree/master) [![Test Coverage](https://api.codeclimate.com/v1/badges/8277fc2bb0b1f777084f/test_coverage)](https://codeclimate.com/github/spree/spree/test_coverage) [![Slack Status](http://slack.spreecommerce.org/badge.svg)](http://slack.spreecommerce.org)
 
-**Spree** is a complete open source e-commerce solution built with Ruby on Rails. It was started by Sean Schofield and is now developed by [Spark Solutions](http://sparksolutions.co). We're open to [contributions](#contributing).
+**Spree** is a complete open source e-commerce solution built with Ruby on Rails. It was started by Sean Schofield and is now developed by [Spark Solutions][spark]. We're open to [contributions](https://guides.spreecommerce.org/developer/contributing/).
 
 ## Key Features
 
@@ -52,7 +52,7 @@ Admin panel credentials for your own Heroku demo:
 3. Unzip it
 4. Run `bin/setup` in `spree_starter-main` directory
 
-### Option B - add Spree to an existing application
+### Option B - add Spree to an existing Ruby on Rails application
 
 1. [Please follow Add Spree to an existing Ruby on Rails application tutorial](https://guides.spreecommerce.org/developer/tutorials/existing_app_tutorial.html)
 
@@ -85,4 +85,4 @@ Spree is released under the [New BSD License](https://github.com/spree/spree/blo
 We are passionate about open source software.
 We are [available for hire][spark].
 
-[spark]:http://sparksolutions.co?utm_source=github
+[spark]:https://sparksolutions.co?utm_source=github
